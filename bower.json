@@ -1,0 +1,19 @@
+{
+	"name": "hellofacebook",
+	"version": "1.0.0",
+	"main": [
+		"dist/hellofacebook.js"
+	],
+	"ignore": [
+		"tests",
+		"demos",
+		"assets",
+		"ui",
+		"*.html",
+		"package.json"
+	],  
+       "dependencies": {
+             "hello": "~1.2.2"
+        }
+
+}
