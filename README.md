@@ -7,5 +7,26 @@ hellofacebook
  
 Install
 =============
-  ###Bower package
-   Bower install hellofacebook
+###Bower package
+```
+bower install hellofacebook;
+
+```
+
+#Usage
+```
+var app = angular.module('sampleapp',[ 'hellofacebook'  ]);
+function sampleCtrl( $scope , hellofacebook  ){
+  $scope.facebookLogin = function(){
+    
+         hellofacebook.login().then(function(data){
+           // success callback
+         },function(err){
+           // failure callback
+         })
+ $scope.facebooklogout = function(){
+    hellofacebook.logout();
+  }
+}
+
+```
